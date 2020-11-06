@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="Uppgift_1_Kurs_2_Simple.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Uppgift_1_Kurs_2_Simple"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="ChosenFile" Height="250" Width="250" Text=""/>
+        <Button x:Name="btnMessage" Content="Open file" Click="btnMessage_Click" HorizontalAlignment="Stretch" Margin="0,600,0,0" VerticalAlignment="Top"/>
+
+        <ListView Grid.Column="2" x:Name="lwJson">
+
+        </ListView>
+    </Grid>
+</Page>
